@@ -3,8 +3,8 @@ import React from "react";
 const Form = () => {
   return (
     <div>
-      <div className="">
-        <form className="flex flex-col gap-[1.5rem]">
+      <div className="pt-20 md:pt-0">
+        <form className="flex flex-col gap-4 md:gap-6 overflow-hidden">
           <label htmlFor="firstname">First Name</label>
           <input type="text" placeholder="Enter First Name" />
 
@@ -24,7 +24,7 @@ const Form = () => {
           ></textarea>
 
           <button
-            className="bg-[#D3E97A] text-[#0A0A0A] font-manrope font-bold px-10 py-5 rounded-[6.25rem] w-fit cursor-pointer"
+            className="bg-[#D3E97A] text-[#0A0A0A] font-manrope font-bold px-10 py-5 rounded-[6.25rem] w-fit cursor-pointer mt-3 md:mt-0"
             type="submit"
           >
             SUBMIT

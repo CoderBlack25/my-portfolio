@@ -1,21 +1,28 @@
 import React from "react";
-import LiveDemo from "../assets/livedemo.svg";
-import GitHubCode from "../assets/seegithub.svg";
+import LiveDemo from "../assets/Vector.png";
+import GitHubCode from "../assets/Vector (1).png";
+import ProjectLink from "./ProjectsLink.jsx";
 
 const IndividualProjects = (props) => {
   return (
     <div>
-      <div className="flex justify-between items-center gap-20 pt-16">
-        <div className="bg-[#1A1A1A] w-[37.5rem] h-[37.5rem] rounded-xl flex justify-center items-center">
+      <div className="flex flex-col gap-16 pt-16 md:flex md:flex-row md:justify-between md:items-center">
+        <div
+          className="bg-[#1A1A1A] w-[343px] h-[343px]
+            sm:w-[400px] sm:h-[400px]
+            md:w-[500px] md:h-[500px]
+            lg:w-[600px] lg:h-[600px]
+            rounded-xl flex justify-center items-center mx-auto md:mx-0"
+        >
           {props.projectimage}
         </div>
 
-        <div className="flex-1 font-manrope py-10 pl-36">
-          <h1 className="text-[2rem] font-medium text-[#FFFFFF] pb-7">
+        <div className="font-manrope py-10 md:flex-1 md:pl-36 text-justify">
+          <h1 className="text-2xl md:text-[2rem] font-medium text-[#FFFFFF] pb-7">
             {props.projectname}
           </h1>
 
-          <p className="text-[#C7C7C7] text-lg pb-7">
+          <p className="text-[#C7C7C7] text-base md:text-lg pb-7">
             {props.projectdescription}
           </p>
 
@@ -42,13 +49,18 @@ const IndividualProjects = (props) => {
           </div>
 
           <div className="flex gap-6 pt-8">
-            <a href="#">
-              <img src={LiveDemo} alt="view project demo" />
-            </a>
-
-            <a href="#">
-              <img src={GitHubCode} alt="view project code" />
-            </a>
+            <ProjectLink
+              href={props.demoLink}
+              text="LIVE DEMO"
+              imgSrc={LiveDemo}
+              alt="view project demo"
+            />
+            <ProjectLink
+              href={props.githubLink}
+              text="SEE ON GITHUB"
+              imgSrc={GitHubCode}
+              alt="view project code"
+            />
           </div>
         </div>
       </div>

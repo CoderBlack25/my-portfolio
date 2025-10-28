@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 label {
   font-family: var(--font-manrope);
   font-weight: 500;
@@ -44,6 +48,13 @@ textarea {
   resize: none;
   color: #ffffff;
   font-family: var(--font-manrope);
+}
+
+@media (max-width: 768px) {
+  input,
+  textarea {
+    padding: 10px 16px;
+  }
 }
 
 textarea::placeholder {

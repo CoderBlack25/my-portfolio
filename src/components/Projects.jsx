@@ -6,17 +6,17 @@ import ProjectImage3 from "../assets/image 9.png";
 
 const Projects = () => {
   return (
-    <section id="work" className="pt-24">
-      <div className="px-24 py-14 border-b border-b-[#484848] pb-36">
-        <h1 className="text-[76px] font-bebas text-[#FFFFFF] leading-none">
+    <section id="work" className="pt-20">
+      <div className="px-6 md:px-24 py-14 border-b border-b-[#484848] pb-36">
+        <h1 className="text-[2.6875rem] pb-4 md:text-[4.75rem] font-bebas text-[#FFFFFF] leading-none">
           FEATURED PROJECTS
         </h1>
 
-        <p className="text-lg font-manrope text-[#C7C7C7]">
+        <p className="text-base md:text-lg font-manrope text-[#C7C7C7]">
           Here are some of the selected projects that showcase my passion for
         </p>
 
-        <p className="text-lg font-manrope text-[#C7C7C7]">
+        <p className="text-base md:text-lg font-manrope text-[#C7C7C7]">
           front-end development.
         </p>
 
@@ -27,7 +27,15 @@ const Projects = () => {
             client="WarnerMedia"
             year="2023"
             role="Front-end Developer"
-            projectimage={<img src={ProjectImage1} alt="Project 1" />}
+            projectimage={
+              <img
+                src={ProjectImage1}
+                alt="Project 1"
+                className="max-w-full max-h-full object-contain"
+              />
+            }
+            demoLink="https://zeefas.com/"
+            githubLink="https://sedo.com/us/"
           />
 
           <IndividualProjects
@@ -36,7 +44,13 @@ const Projects = () => {
             client="World News"
             year="2022"
             role="Front-end Developer"
-            projectimage={<img src={ProjectImage2} alt="Project 2" />}
+            projectimage={
+              <img
+                src={ProjectImage2}
+                alt="Project 2"
+                className="max-w-full max-h-full object-contain"
+              />
+            }
           />
 
           <IndividualProjects
@@ -45,7 +59,13 @@ const Projects = () => {
             client="E-commerce"
             year="2022"
             role="Front-end Developer"
-            projectimage={<img src={ProjectImage3} alt="Project 3" />}
+            projectimage={
+              <img
+                src={ProjectImage3}
+                alt="Project 3"
+                className="max-w-full max-h-full object-contain"
+              />
+            }
           />
         </div>
       </div>

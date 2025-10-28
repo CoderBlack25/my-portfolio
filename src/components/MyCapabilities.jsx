@@ -2,17 +2,17 @@ import React from "react";
 
 const MyCapabilities = () => {
   return (
-    <section id="stack" className="scroll-mt-32">
+    <section /*id="stack" className="scroll-mt-32"*/>
       <div>
-        <div className="flex px-12 pb-32">
-          <div className="flex-[1]">
-            <h1 className="font-bebas text-[#FFFFFF] text-[4.75rem] leading-none">
+        <div className="flex flex-col md:flex md:flex-row px-0 md:px-12 pb-30">
+          <div className="flex-1">
+            <h1 className="font-bebas text-[#FFFFFF] text-[2.6875rem] md:text-[4.75rem] leading-none pb-6">
               MY TECH STACK
             </h1>
           </div>
 
-          <div className="flex flex-col gap-8 flex-[1] pl-64">
-            <p className="font-manrope text-[#C7C7C7] text-lg">
+          <div className="flex flex-col gap-8 flex-1 pl-0 md:pl-64">
+            <p className="font-manrope text-[#C7C7C7] text-base md:text-lg">
               I am always looking to add more skills. Morbi egestas neque eu
               blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at
               purus faucibus tristique ut et dolor.
@@ -29,7 +29,7 @@ const MyCapabilities = () => {
               ].map((tech) => (
                 <button
                   key={tech}
-                  className="text-[#ffffff] font-manrope font-bold px-10 py-5 rounded-[6.25rem] border border-[#484848]"
+                  className="text-[#ffffff] font-manrope font-bold px-6 py-4 md:px-10 md:py-5 rounded-[6.25rem] border border-[#484848] text-sm md:text-base"
                 >
                   {tech}
                 </button>

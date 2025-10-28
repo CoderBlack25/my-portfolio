@@ -3,16 +3,16 @@ import MyExperience from "./MyExperience";
 
 const Experience = () => {
   return (
-    <section id="experience" className="pt-24">
+    <section className="pt-20">
       <div>
-        <div className="flex py-16 px-24 border-b border-b-[#484848] pb-36">
-          <div className="flex-[1]">
-            <h1 className="font-bebas text-[#FFFFFF] text-[4.75rem] leading-none">
+        <div className="flex flex-col md:flex md:flex-row py-16 px-6 md:px-24 border-b border-b-[#484848] pb-36 overflow-hidden">
+          <div className="flex-1">
+            <h1 className="font-bebas text-[#FFFFFF] text-[2.6875rem] md:text-[4.75rem] leading-none pb-12">
               MY EXPERIENCE
             </h1>
           </div>
 
-          <div className="flex flex-col gap-8 flex-[1] pl-64">
+          <div className="flex flex-col gap-8 flex-1 pl-0 md:pl-64">
             <MyExperience
               position="Front-End Intern"
               date="Sep 2023 — Nov 2023"

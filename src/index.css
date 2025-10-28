@@ -32,10 +32,15 @@ input {
   height: 3.1875rem;
   color: #ffffff;
   font-family: var(--font-manrope);
+  outline: none;
 }
 
 input::placeholder {
   color: #888888;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #d3e97a;
 }
 
 textarea {
@@ -48,6 +53,11 @@ textarea {
   resize: none;
   color: #ffffff;
   font-family: var(--font-manrope);
+  outline: none;
+}
+
+textarea:focus {
+  border: 1px solid #d3e97a;
 }
 
 @media (max-width: 768px) {
